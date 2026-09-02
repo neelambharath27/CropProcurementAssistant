@@ -1,0 +1,11 @@
+{
+  "name": "smart-procurement-phase4",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix frontend install && npm --prefix backend install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix backend test"
+  },
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
